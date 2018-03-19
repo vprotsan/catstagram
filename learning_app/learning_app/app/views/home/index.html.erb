@@ -1,0 +1,12 @@
+<h1>Home#index</h1>
+<!-- <p>Find me in app/views/home/index.html.erb</p> -->
+<!-- <%= form_tag post_path do %>
+  <%= submit_tag %>
+<% end %> -->
+
+<%= form_tag "/post?query_params=yeah" do %>
+<!-- square bracket will collapse into a hash -->
+  <%= text_field_tag 'user[name]'%>
+  <%= text_field_tag 'user[age]'%>
+  <%= submit_tag "get money" %>
+<% end %>

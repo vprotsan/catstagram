@@ -1,0 +1,17 @@
+<h1>Home#index</h1>
+<!-- =>debugging tool -->
+<%# p @movies %>
+
+<%#= debug @movies %>
+
+<%= image_tag 'toy_story', width: 200 %>
+<%= render partial: 'movie', collection: @movies %>
+<%#= render 'movies', movies: @movies %>
+<%#= end %>
+
+<%#= @movies.each do |movie| %>
+<!-- <div> <%#= movie.name %> </div> -->
+<%# end %>
+<h1>Tom before 1995</h1>
+<%#= render 'movies', movies: @movies_older %>
+<%= render partial: 'movie', collection: @movies_older %>

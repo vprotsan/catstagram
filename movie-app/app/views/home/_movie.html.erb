@@ -1,0 +1,7 @@
+<div id="<%= dom_id movie %>" class="<%= dom_class movie%>"><%= movie.name %></div>
+
+<%= form_for movie do |f| %>
+  <%= f.label :name, "Movie:" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Update this movie" %>
+<% end %>

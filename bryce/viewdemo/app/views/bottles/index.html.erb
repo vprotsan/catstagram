@@ -1,0 +1,9 @@
+<% @bottles.each do |b| %>
+<p>
+<%= pluralize b, 'bottle' %>
+of beer on the wall,
+<br/>
+<%= pluralize b, 'bottle' %>
+of beer.
+</p>
+<% end %>
